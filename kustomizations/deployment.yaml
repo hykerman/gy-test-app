@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gy-demo
+  labels:
+    app: gy-demo
+spec:
+  selector:
+    matchLabels:
+      app: gy-demo
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: gy-demo
+    containers:
+      - name: gy-demo-app
+        image: ghcr.io/hykerman/gydemoapp:1.0
+    imagePullSecrets:
+    - name: secret/secretname
