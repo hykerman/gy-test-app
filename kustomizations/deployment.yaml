@@ -14,8 +14,9 @@ spec:
     metadata:
       labels:
         app: gy-demo
-    containers:
-      - name: gy-demo-app
-        image: ghcr.io/hykerman/gydemoapp:1.0
-    imagePullSecrets:
-    - name: secret/secretname
+    spec:
+      containers:
+        - name: gy-demo-app
+          image: ghcr.io/hykerman/gydemoapp:1.0
+      imagePullSecrets:
+      - name: backstage-pass
