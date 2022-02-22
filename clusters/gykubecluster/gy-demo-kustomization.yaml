@@ -11,5 +11,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: gy-test-app
+    name: flux-system
 
