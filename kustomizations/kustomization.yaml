@@ -4,4 +4,3 @@ resources:
   - aad-pod-identity.yaml
   - deployment.yaml
   - service.yaml
-  - namespace.yaml
