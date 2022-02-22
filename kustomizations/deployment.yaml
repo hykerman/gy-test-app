@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gy-demo
-  namespace: demoapp
   labels:
     app: gy-demo
 spec:
